@@ -82,6 +82,9 @@ font-weight: 700;
 font-size: 3rem;
 color: rgb(1,126,197)
 }
+.main-para{
+    text-align: justify;
+}
 
 .main-heading{
     margin: 0 auto;
