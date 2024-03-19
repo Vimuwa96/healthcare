@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .video-container {
+    margin-top: 40px; /* Adjust margin for smaller screens */
+  }
+
+  .content {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .main-header-wrapper h5 {
+    font-size: small;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .main-header-wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+
+  .main-header-section {
+    position: absolute;
+    top: 50%;
+  }
+
+  .main-header-wrapper h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .slogan p {
+    text-align: justify;
+  }
+}
