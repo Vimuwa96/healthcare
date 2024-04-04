@@ -32,413 +32,141 @@
   </head>
   <body>
     <div class="body-wrapper">
+      <!-- Navbar Start -->
       <div class="">
-        <div class="">
-          <!-- Navbar Start -->
-          <!-- Main Nav -->
-          <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="index.html"
-                ><img src="HQ_PTC_Holdings_-white.png" alt="" height="80"
-              /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                style="border: none"
-              >
-                <span><i class="bi bi-three-dots"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item px-4">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+        <div class="nav-wrapepr p-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="logo p-2">
+                  <img class="p-1" src="https://www.adani.com/-/media/8614C9E10D4A4EC3993153E0208322ED.ashx" alt="" height="50px" />
+                </div>
+                
+              </div>
+              <div class="col-sm-9 d-flex">
+                <ul class="nav-links d-flex my-auto">
+                  <li class="d-flex my-auto px-4"><a href="">Home</a></li>
+                  <li class="d-flex my-auto px-4"><a href="">About us</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sectors
+                    </a>
+                    <div class="dropdown-menu px-3 rounded-3 border-0 shadow">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a href="#">
+                            <div class="d-flex align-items-center py-3 px-1 rounded-3">
+                              <div class="icon px-3  rounded-3 fs-1">
+                                <img src="data:image/jpeg;base64,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" alt="" width="250px" height="150px">
+                              </div>
+                              <div class="text ps-3">
+                                <h5>Agriculture</h5>
+                                <div>Irure incididunt eu irure quis ipsum
+                                  occaecat dolor quis.</div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="#">
+                            <div class="d-flex align-items-center py-3 px-1 rounded-3">
+                              <div class="icon px-3  rounded-3 fs-1">
+                                <img src="https://www.med.jfn.ac.lk/wp-content/uploads/2018/08/pexels-photo.jpg" alt="" width="250px" height="150px">
+                              </div>
+                              <div class="text ps-3">
+                                <h5>Medical</h5>
+                                <div>Irure incididunt eu irure quis ipsum
+                                  occaecat dolor quis.</div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="#">
+                            <div class="d-flex align-items-center py-3 px-1 rounded-3">
+                              <div class="icon px-3  rounded-3 fs-1">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmw5mDpB8QWtvpD0XF-SFJLfdzelsIvTDaSkWXoilruQ&s" alt="" width="250px" height="150px">
+                              </div>
+                              <div class="text ps-3">
+                                <h5>Power & Energy</h5>
+                                <div>Irure incididunt eu irure quis ipsum
+                                  occaecat dolor quis.</div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="#">
+                            <div class="d-flex align-items-center py-3 px-1 rounded-3">
+                              <div class="icon px-3  rounded-3 fs-1">
+                                <img src="https://howtobeastoic.files.wordpress.com/2017/04/img_7994.jpg" alt="" width="250px" height="150px">
+                              </div>
+                              <div class="text ps-3">
+                                <h5>Leisure</h5>
+                                <div>Irure incididunt eu irure quis ipsum
+                                  occaecat dolor quis.</div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </li>
-                  <li class="nav-item px-4">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item px-4">
-                    <a class="nav-link" href="" aria-disabled="true">Sectors</a>
-                  </li>
-
-                  <li class="nav-item px-4">
-                    <a class="nav-link" href="" aria-disabled="true">Careers</a>
-                  </li>
-                  <li class="nav-item px-4">
-                    <a class="nav-link" href="" aria-disabled="true">News</a>
-                  </li>
-                  <li class="nav-item px-4">
-                    <a class="nav-link" href="" aria-disabled="true"
-                      >Contact us</a
-                    >
-                  </li>
-                  <li class="nav-item text-center px-4">
-                    <a class="nav-link sign" href="">Sign up</a>
-                  </li>
+                  <li class="d-flex my-auto px-4"><a href="">News Room</a></li>
+                  <li class="d-flex my-auto px-4"><a href="">Careers</a></li>
+                  <li class="d-flex my-auto px-4"><a href="">Contact</a></li>
                 </ul>
-                <div class="search text-center">
-                  <a href="" style="color: rgb(255, 255, 255)"
-                    ><i class="bi bi-search"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <!-- Navbar End -->
-          <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
-              <div class="container">
-                <a class="navbar-brand" href="#"
-                  ><img src="HQ_PTC_Holdings_.png" alt="" height="80"
-                /></a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupported"
-                  aria-controls="navbarSupported"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                  style="border: none"
-                >
-                  <span><i class="bi bi-three-dots"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupported">
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item px-4">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item px-4">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item px-4">
-                      <a class="nav-link" href="" aria-disabled="true"
-                        >Sectors</a
-                      >
-                    </li>
-
-                    <li class="nav-item px-4">
-                      <a class="nav-link" href="" aria-disabled="true"
-                        >Careers</a
-                      >
-                    </li>
-                    <li class="nav-item px-4">
-                      <a class="nav-link" href="" aria-disabled="true">News</a>
-                    </li>
-                    <li class="nav-item px-4">
-                      <a class="nav-link" href="" aria-disabled="true"
-                        >Contact us</a
-                      >
-                    </li>
-                    <li class="nav-item text-center px-4">
-                      <a class="nav-link sign" href="">Sign up</a>
-                    </li>
-                  </ul>
-                  <div class="search text-center">
-                    <a href="" style="color: black"
-                      ><i class="bi bi-search"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="main-header">
-          <div class="carosual-wrapper">
-            <div class="your-class">
-              <div class="slider">
-                <div class="image">
-                  <img src="Untitled design/1.jpg" alt="" width="100%" />
-                </div>
-                <div class="desc">
-                  <h1 data-aos="fade-up" data-aos-duration="3000">Des</h1>
-                </div>
-              </div>
-              <div class="slider">
-                <div class="image">
-                  <img src="Untitled design/4.jpg" alt="" width="100%" />
-                </div>
-                <div class="desc">
-                  <h1 data-aos="fade-up" data-aos-duration="3000">Des</h1>
-                </div>
-              </div>
-              <div class="slider">
-                <div class="image">
-                  <img src="Untitled design/7.jpg" alt="" width="100%" />
-                </div>
-                <div class="desc">
-                  <h1 data-aos="fade-up" data-aos-duration="3000">Des</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="about-section text-center">
-            <div class="row" style="width: 100% !important">
-              <div class="col-md-4 position-relative g-5">
-                <h4>OUR BUSINESS SECTORS</h4>
-                <p>EXPOLORE OUR DIVIERSE BUSINESSES</p>
-                <div
-                  class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
-                ></div>
-              </div>
-              <div class="col-md-4 position-relative g-5">
-                <h4>INVESTOR RELATIONS</h4>
-                <p>VIEW OUR FINANCIAL COMPETENCE</p>
-                <div
-                  class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
-                ></div>
-              </div>
-              <div class="col-md-4 position-relative g-5">
-                <h4>CAREERS</h4>
-                <p class="fs-6">JOIN THE WORLD OF PTC</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Navbar End -->
+      <div class="video-wrapper">
+        <video width="100%" height="100%" autoplay loop>
+          <source src="Mushkilon_Ki_Nahi_Sunte_.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- Main Nav -->
 
-      <div class="container-fluid" style="background-color: rgb(246, 246, 246)">
-        <div class="about-us-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="about-us-image p-5">
-                  <img
-                    src="WhatsApp Image 2024-03-20 at 12.46.16 PM.jpeg"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                    class="p-5"
-                  />
-                </div>
-              </div>
-
-              <div class="col-md-6 my-auto">
-                <div
-                  class="about-us-wrapper d-flex my-auto"
-                  style="flex-direction: column"
-                >
-                  <div class="about-us-header">
-                    <p>About us</p>
-                  </div>
-                  <div class="about-us-main-header">
-                    <h2>PTC Holdings (PVT) Ltd</h2>
-                  </div>
-                  <div class="about-company mb-4" style="text-align: justify">
-                    <p>
-                      The Hayleys Group is a leading diversified conglomerate in
-                      Sri Lanka, and one of the country’s largest value-added
-                      exporters. Hayleys accounts for approximately 5.5% of Sri
-                      Lanka’s export income, 4.6% of its tea and 4.7% of its
-                      rubber production, with business interests in 16 diverse
-                      sectors, catering to over 80 markets worldwide. Hayleys
-                      commands globally leading market positions in several key
-                      sectors, such as transportation and logistics, agriculture
-                      and retail, accounts for 5% of global demand for household
-                      and industrial gloves and is the world’s largest
-                      manufacturer of coconut-shell based activated carbon.
-                      Through a vibrant history of 146 years, Hayleys has
-                      nurtured deep-rooted relationships across the country’s
-                      agricultural and smallholder supply chains, distribution
-                      networks and customer segments, delivering significant
-                      socio-economic value to its diverse stakeholders..
-                    </p>
-                  </div>
-                </div>
-                <div class="explore-now">
-                  <a href="">Explore Now</a>
-                </div>
-              </div>
+      <div class="container d-none d-sm-block">
+        <div class="about-section text-center">
+          <div class="row" style="width: 100% !important">
+            <div class="col-md-4 position-relative g-5">
+              <h4>OUR BUSINESS SECTORS</h4>
+              <p>EXPOLORE OUR DIVIERSE BUSINESSES</p>
+              <div
+                class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+              ></div>
+            </div>
+            <div class="col-md-4 position-relative g-5">
+              <h4>INVESTOR RELATIONS</h4>
+              <p>VIEW OUR FINANCIAL COMPETENCE</p>
+              <div
+                class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+              ></div>
+            </div>
+            <div class="col-md-4 position-relative g-5">
+              <h4>CAREERS</h4>
+              <p class="fs-6">JOIN THE WORLD OF PTC</p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="explore-our-dicersity-wrapper text-center">
-        <div class="bg-image text-center">
-          <img src="Untitled design/1.jpg" alt="" width="100%" />
-        </div>
-        <div class="container pt-5" id="explore">
-          <div class="about-us-header-">
-            <p>WITH YOU, WHEREVER YOU GO</p>
-          </div>
-          <div class="about-us-main-header">
-            <h2>Explore Our Diversity</h2>
-          </div>
-          <div class="about-company pt-3 mb-4">
-            <p>
-              With a presence in 16 business sectors, the Hayleys Group is the
-              most diversified conglomerate in Sri Lanka.
-            </p>
-          </div>
-
-          <div class="explore-content-wrapper">
-            <div class="row">
-              <div class="col-md-4 g-4 p-5">
-                <div
-                  class="company-card p-5"
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                >
-                  <div class="company-about">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, voluptatem?
-                    </p>
-                  </div>
-                  <div class="company-card-img">
-                    <img
-                      src="HQ_PTC_AGRO_.png"
-                      alt="agro_logo"
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="see-more pt-4">
-                    <a href="">See more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 g-4 p-5">
-                <div
-                  class="company-card p-5"
-                  data-aos="fade-up"
-                  data-aos-duration="700"
-                >
-                  <div class="company-about">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, voluptatem?
-                    </p>
-                  </div>
-                  <div class="company-card-img">
-                    <img
-                      src="HQ_PTC_Holdings_.png"
-                      alt="agro_logo"
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="see-more pt-4">
-                    <a href="">See more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 g-4 p-5">
-                <div
-                  class="company-card p-5"
-                  data-aos="fade-up"
-                  data-aos-duration="900"
-                >
-                  <div class="company-about">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Libero, voluptatem?
-                    </p>
-                  </div>
-                  <div class="company-card-img">
-                    <img
-                      src="HQ_PTC_Medical.png"
-                      alt="agro_logo"
-                      width="100%"
-                      height="80%"
-                    />
-                  </div>
-                  <div class="see-more my-auto">
-                    <a href="" class="align-middle my-auto">See more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="vh-100"></div>
     </div>
+    <div class="vh-100"></div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      window.onscroll = function () {
-        scrollFunctionNavbar();
-        scrollFunctionHeader();
-      };
 
-      function scrollFunctionNavbar() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-150px";
-        }
-      }
-
-      function scrollFunctionHeader() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("header").style.color = "transparent";
-        } else {
-          document.getElementById("header").style.color = "white";
-        }
-      }
-    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".your-class").slick({
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-        });
 
-        // Remove aos-animate class before slide change
-        $(".your-class").on(
-          "beforeChange",
-          function (event, slick, currentSlide, nextSlide) {
-            $(".slick-slide")
-              .eq(currentSlide)
-              .find(".desc")
-              .removeClass("aos-animate");
-          }
-        );
-
-        // Add aos-animate class after slide change
-        $(".your-class").on(
-          "afterChange",
-          function (event, slick, currentSlide) {
-            $(".slick-slide")
-              .eq(currentSlide)
-              .find(".desc")
-              .addClass("aos-animate");
-          }
-        );
-
-        // Initialize AOS
-        AOS.init();
-      });
-    </script>
   </body>
 </html>
